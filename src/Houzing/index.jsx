@@ -9,7 +9,7 @@ margin: 64px;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        color: ${props => props.active ? 'blue' : 'white'};
+        color:'white';
 `;
 const NavName = styled.h1`
         font-size: 18px;
@@ -24,20 +24,23 @@ export default class Houzing extends Component{
   render() {
     return(
       <Container>
+        {/* Navbar end ============================ */}
         <Icons>
           <LogoName>
             <Icons.Logo />
             <NavName>Houzing</NavName>
           </LogoName>
           <StyledNavBar>
-            <NavLink active={true}>Home</NavLink>
-            <NavLink active={false}>Properties</NavLink>
-            <NavLink active={false}>Contact</NavLink>
+            <NavLink>Home</NavLink>
+            <NavLink>Properties</NavLink>
+            <NavLink>Contact</NavLink>
           </StyledNavBar>
           <LogoName>
             <Btn>Login</Btn>
           </LogoName>
         </Icons>
+        {/* Navbar end ============================ */}
+
       </Container>
     )
   }

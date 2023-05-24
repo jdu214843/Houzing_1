@@ -1,0 +1,28 @@
+.image-gallery {
+    display: flex;
+    margin-top: 24px;
+    width: 1280px;
+    gap: 20px;
+}
+
+.image1 {
+    display: flex;
+    flex: 1;
+}
+
+.image1 img {
+    width: 600px;
+
+}
+
+.image2 {
+    display: flex;
+
+
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image2 img {
+    width: 320px;
+}
